@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+.light { color-scheme: light; }
+
+html, body, #root { height: 100%; }
+
+body {
+  @apply bg-ink text-slate-100 antialiased;
+  overscroll-behavior-y: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.light body { @apply bg-slate-100 text-slate-900; }
+
+input, button { font: inherit; }
+
+/* Slim scrollbars */
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-thumb { background: #334155; border-radius: 8px; }
+
+/* PIN boxes */
+.pin-box {
+  @apply w-11 h-14 text-center text-2xl font-bold rounded-xl border-2 bg-panel;
+  @apply border-slate-700 focus:border-accent outline-none;
+}
+.light .pin-box { @apply bg-white border-slate-300; }
+
+.card { @apply rounded-2xl border border-slate-800 bg-panel p-4; }
+.light .card { @apply border-slate-200 bg-white shadow-sm; }
+
+.btn {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-semibold
+         bg-accent text-ink active:scale-[.98] transition disabled:opacity-40 select-none;
+}
+.btn-ghost {
+  @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 font-semibold
+         border border-slate-700 bg-slate-800/60 active:scale-[.98] transition disabled:opacity-40 select-none;
+}
+.light .btn-ghost { @apply border-slate-300 bg-white; }
+
+.input {
+  @apply w-full rounded-xl border border-slate-700 bg-slate-900/70 px-4 py-2.5 outline-none focus:border-accent;
+}
+.light .input { @apply border-slate-300 bg-white; }
+
+.tab-active { @apply text-accent; }
+.tab-idle { @apply text-slate-500; }
+.light .tab-idle { @apply text-slate-400; }
+
+.key-btn {
+  @apply rounded-lg border border-slate-700 bg-slate-800/70 px-2 py-2.5 text-sm font-semibold
+         active:bg-slate-700 active:scale-95 transition select-none text-center;
+}
+.light .key-btn { @apply border-slate-300 bg-slate-100 active:bg-slate-200; }
+.key-btn.held { @apply bg-accent text-ink border-accent; }
+
+.touchpad {
+  touch-action: none;
+  @apply rounded-2xl border-2 border-dashed border-slate-700 bg-slate-900/50 select-none;
+}
+.light .touchpad { @apply border-slate-300 bg-slate-50; }

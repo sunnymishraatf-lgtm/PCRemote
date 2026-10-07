@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PC Remote</string>
+    <string name="connect_title">🖥️ PC Remote</string>
+    <string name="connect_sub">Control your PC over your local network.\nNo cloud, no account.</string>
+    <string name="scan_qr">📷 Scan QR code</string>
+    <string name="saved_pcs">Saved PCs</string>
+    <string name="help">How to connect:\n\n1. On the PC, double-click start.bat in the pc-remote folder.\n2. Connect this phone to the same Wi-Fi (or the PC\'s hotspot).\n3. The PC appears above automatically — tap it. Or tap Scan QR and point at the PC screen.\n\nWorks over Wi-Fi, hotspot, USB tethering and Bluetooth tethering.\n\nTip: long-press a saved PC to remove it.</string>
+    <string name="scan_hint">Point the camera at the QR code on the PC screen</string>
+    <string name="cancel">Cancel</string>
+    <string name="retry">↻ Retry</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="conn_error">Could not reach the PC.\n\nMake sure:\n✓ the PC server is running\n✓ this phone is on the same Wi-Fi\n✓ Windows Firewall allows the app</string>
+</resources>

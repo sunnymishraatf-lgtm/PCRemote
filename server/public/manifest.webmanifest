@@ -1,0 +1,1 @@
+{"background_color":"#0b1220","description":"Control your PC and transfer files over your local network. No cloud, no account.","display":"standalone","icons":[{"sizes":"any","src":"./icon.svg","type":"image/svg+xml"}],"name":"PC Remote","short_name":"PC Remote","start_url":"./","theme_color":"#0b1220"}
