@@ -1,12 +1,11 @@
 node_modules/
 client/node_modules/
-client/dist/
-*.log
-.DS_Store
-Thumbs.db
-# signing material must never be committed
 *.keystore
 *.jks
-*.idsig
-.ks-pass
-*-keystore-password.txt
+*.apk
+.env
+.env.*
+dist/
+build/
+*.tsbuildinfo
+.DS_Store
